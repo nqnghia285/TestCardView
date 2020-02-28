@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Test Card View</string>
+    <string-array name="list">
+        <item>Item 01</item>
+        <item>Item 02</item>
+        <item>Item 03</item>
+        <item>Item 04</item>
+        <item>Item 05</item>
+        <item>Item 06</item>
+        <item>Item 07</item>
+        <item>Item 08</item>
+        <item>Item 09</item>
+        <item>Item 10</item>
+    </string-array>
+</resources>
