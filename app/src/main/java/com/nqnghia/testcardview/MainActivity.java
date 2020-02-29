@@ -17,6 +17,7 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.favorite_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Favorite!!!", Toast.LENGTH_SHORT).show();
+                Snackbar.make(mRecyclerView, "Favorite!!!", Snackbar.LENGTH_SHORT).show();
             }
         });
     }
@@ -61,6 +62,72 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void createItemList() {
         mItemList = new ArrayList<>();
         mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 01", "Subtitle 01"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 01", "Subtitle 01"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 01", "Subtitle 01"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 05", "Subtitle 05"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 06", "Subtitle 06"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 07", "Subtitle 07"));
+        mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 08", "Subtitle 08"));
+        mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 09", "Subtitle 09"));
         mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 02", "Subtitle 02"));
         mItemList.add(new ItemCardView(R.drawable.ic_android, "Title 03", "Subtitle 03"));
         mItemList.add(new ItemCardView(R.drawable.ic_favorite, "Title 04", "Subtitle 04"));
@@ -83,7 +150,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAdapter.event.observe(this, new Observer<Integer>() {
             @Override
             public void onChanged(Integer integer) {
+//                mAdapter.notifyDataSetChanged();
                 Snackbar.make(mRecyclerView, integer.toString(), Snackbar.LENGTH_LONG).show();
+            }
+        });
+
+        mAdapter.setOnItemClickListener(new AdapterCardView.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                CheckBox checkBox = mRecyclerView.findViewHolderForLayoutPosition(position).itemView.findViewById(R.id.checked_box);
+                mItemList.get(position).setmCheckBox(checkBox.isChecked());
+                mAdapter.notifyDataSetChanged();
             }
         });
     }
@@ -92,12 +169,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         openDialog();
     }
 
-    private void removeItem(int position) {
-        if (mItemList.size() > position && position > -1) {
-            Snackbar.make(mRecyclerView, mAdapter.event.getValue().toString(), Snackbar.LENGTH_LONG).show();
-            mItemList.remove(position);
+    private void removeItem() {
+//        if (mItemList.size() > position && position > -1) {
+            Snackbar.make(mRecyclerView, "Remove items", Snackbar.LENGTH_LONG).show();
+            int index = 0;
+            while (index < mItemList.size()) {
+                if (mItemList.get(index).getmCheckBox()) {
+                    mItemList.remove(index);
+                } else {
+                    index++;
+                }
+            }
+//            mItemList.remove(position);
+            mAdapter.setSelectedItem();
             mAdapter.notifyDataSetChanged();
-        }
+//        }
     }
 
     private void openDialog() {
@@ -152,7 +238,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 insertItem();
                 break;
             case R.id.remove_btn:
-                removeItem(mAdapter.event.getValue());
+                removeItem();
                 break;
             default:
                 break;
